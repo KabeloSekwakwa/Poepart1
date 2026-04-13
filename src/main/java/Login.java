@@ -1,3 +1,5 @@
+//Name: Kabelo Sekwakwa
+//Student: 10509287
 //Assistance with Regex logic provided by Google Gemini (2026).
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
