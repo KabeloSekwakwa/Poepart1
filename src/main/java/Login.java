@@ -13,7 +13,8 @@ public class Login {
     public boolean checkUserName(String username) {
         return username.contains("_") && username.length() <= 5;
     }
-
+    //This method validates that the username is 5 characters and contains an underscore.
+    
     public boolean checkPasswordComplexity(String password) {
         boolean hasCap = !password.equals(password.toLowerCase());
         boolean hasNum = password.matches(".*\\d.*");
