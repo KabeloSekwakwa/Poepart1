@@ -76,12 +76,9 @@ public class Poepart1 {
         System.out.print("Enter Password: ");
         String loginPass = input.nextLine();
 
-       
-        boolean isLoggedIn = loginUser.equals(isUsernameValid) && loginPass.equals(isPasswordValid);
+        System.out.println("\n-----------------------------");
         
-        System.out.println("-----------------------------");
-
-        if (isLoggedIn) {
+        if (loginUser.equals(username) && loginPass.equals(password)) {
             System.out.println("Welcome " + firstName + ", " + lastName + " it is great to see you again.");
         } else {
             System.out.println("Username or password incorrect, please try again.");
