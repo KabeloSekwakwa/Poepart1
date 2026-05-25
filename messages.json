@@ -1,0 +1,16 @@
+{
+ "messageNumber":2,
+ "messageId": "8472970555",
+ "messageHash": "84:1:LEAVEALONE",
+ "recipient": "+27691095664",
+ "messageText": "leave me alone"
+}
+
+{
+ "messageNumber": 1,
+ "messageId": "2830420352",
+ "messageHash": "28:0:TESTMESSAGE",
+ "recipient": "+27718693002",
+ "messageText": "Test message"
+}
+
