@@ -18,7 +18,7 @@ import com.google.gson.GsonBuilder;
 
 public class Poepart1 {
 
-    // --- TASK 1: Global Parallel Arrays Requirement ---
+    // --- TASK 1: Global Parallel Arrays  ---
     private static final int MAX_MESSAGES = 100; 
     private static String[] sentMessages = new String[MAX_MESSAGES];
     private static String[] disregardedMessages = new String[MAX_MESSAGES];
@@ -28,7 +28,7 @@ public class Poepart1 {
     private static int messageCount = 0; // sent messages
     private static int disregardedCount = 0; // disregarded messages
 
-    // Class for JSON only - not used for main logic
+    // Class for JSON 
     static class MessageDetails {
         String messageId;
         String messageHash;
