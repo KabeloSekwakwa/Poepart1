@@ -13,28 +13,28 @@ public class MessageServiceTest {
     @Before
     public void setUp() {
         MessageService.resetForTesting();
-        MessageService.loadTestData(); // Loads messages 1-5 from rubric
+        MessageService.loadTestData(); // Loads messages 1-5 
     }
 
-    @Test // Rubric: Sent Messages array correctly populated
+    @Test 
     public void testSentMessagesArray_CorrectlyPopulated() {
         assertEquals("Did you get the cake?", MessageService.getSentMessages()[0]);
         assertEquals("It is dinner time!", MessageService.getSentMessages()[3]);
     }
 
-    @Test // Rubric: Display the longest Message
+    @Test //  Display the longest Message
     public void testDisplayLongestMessage() {
         String expected = "Where are you? You are late! I have asked you to be on time.";
         assertEquals(expected, MessageService.getLongestMessage());
     }
 
-    @Test // Rubric: Search for messageID - Test Data: message 4 "0838884567"
+    @Test // Search for messageID - Test Data: message 4 "0838884567"
     public void testSearchByMessageID() {
         String expected = "It is dinner time!";
         assertEquals(expected, MessageService.searchByMessageID("4567890123"));
     }
 
-    @Test // Rubric: Search all messages for +27838884567
+    @Test //  Search all messages for +27838884567
     public void testSearchByRecipient() {
         String[] results = MessageService.searchByRecipient("+27838884567");
         assertEquals(2, results.length);
@@ -42,7 +42,7 @@ public class MessageServiceTest {
         assertEquals("Ok, I am leaving without you.", results[1]);
     }
 
-    @Test // Rubric: Delete a message using message hash - Test Message 2
+    @Test // Delete a message using message hash - Test Message 2
     public void testDeleteByHash() {
         String hashToDelete = MessageService.getMessageHashes()[1]; // Hash for message 2
         int countBefore = MessageService.getMessageCount();
@@ -50,7 +50,7 @@ public class MessageServiceTest {
         assertEquals(countBefore - 1, MessageService.getMessageCount());
     }
 
-    @Test // Rubric: Message Hash string manipulation
+    @Test //  Message Hash string manipulation
     public void testMessageHashFormat() {
         String hash = MessageService.buildMessageHash("1234567890", 0, "Did you get the cake?");
         assertTrue(hash.startsWith("12:0:"));
@@ -58,14 +58,14 @@ public class MessageServiceTest {
         assertTrue(hash.contains("CAKE"));
     }
 
-    @Test // Rubric: Message ID 10 digits
+    @Test // Message ID 10 digits
     public void testMessageID_Length() {
         String id = MessageService.createTenDigitUniqueId();
         assertEquals(10, id.length());
         assertTrue(id.matches("\\d{10}"));
     }
 
-    @Test // Rubric: Display Report shows Hash, Recipient, Message
+    @Test //  Display Report shows Hash, Recipient, Message
     public void testReportDataExists() {
         assertNotNull(MessageService.getMessageHashes()[0]);
         assertNotNull(MessageService.getRecipients()[0]);
