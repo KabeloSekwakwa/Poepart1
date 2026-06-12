@@ -11,10 +11,9 @@ package com.mycompany.poepart1;
 import java.util.Random;
 
 /**
- * PROG5121 POE Part 1 - Final Class
- * Handles parallel arrays for messages as per Task 1 rubric
- * Student Name: [Your Name]
- * Student Number: [Your Number]
+ * PROG5121 POE Part 3 - Final Class
+ * Student Name: [Kabelo Sekwakwa]
+ * Student Number: [ST10509287]
  */
 public class MessageService {
     
@@ -35,7 +34,7 @@ public class MessageService {
         recipients = new String[MAX_MESSAGES];
     }
 
-    // Loads exact test data from rubric screenshots
+    // Loads 
     public static void loadTestData() {
         // Test Data Message 1: Sent
         addMessage("Did you get the cake?", "+27834557896", "1234567890");
