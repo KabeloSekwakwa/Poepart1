@@ -1,15 +1,32 @@
 [
   {
-    "messageNumber": 1,
-    "messageId": "8793348806",
-    "messageHash": "87:0:LEAVEALONE",
+    "messageId": "6846521099",
+    "messageHash": "68:0:WHEREMAN",
+    "recipient": "+27691095664",
+    "messageText": "Where are you going young man"
+  },
+  {
+    "messageId": "9446230224",
+    "messageHash": "94:1:KDCDKHWKC",
+    "recipient": "+27691095667",
+    "messageText": "kd kadh cdkhwkc"
+  },
+  {
+    "messageId": "6059762354",
+    "messageHash": "60:0:WHEREYOU",
     "recipient": "+27691095663",
-    "messageText": "leave me alone"
+    "messageText": "where are you"
+  },
+  {
+    "messageId": "7719207622",
+    "messageHash": "77:1:KABELOIRLFRIEND",
+    "recipient": "+27691095667",
+    "messageText": "kabelo like his irlfriend"
   }
 ]{
  "messageNumber": 1,
- "messageId": "2057666859",
- "messageHash": "20:0:TESTMESSAGE",
+ "messageId": "1384971856",
+ "messageHash": "13:0:TESTMESSAGE",
  "recipient": "+27718693002",
  "messageText": "Test message"
 }
